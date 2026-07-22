@@ -1,2 +1,2 @@
 # personalsiteelian
-Sitio perosnal Elian Aparicio
+Sitio personal Elian Aparicio
