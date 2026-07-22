@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Elian Aparicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;400;700&display=swap" rel="stylesheet">
+    <style>
+        .fixed-button {
+            position: fixed;
+            bottom: 50px;
+            right: 20px;
+            border: none;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        /* Styles for the button image */
+        .fixed-button img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+    </style>
+</head>
+
+<body id="content">
+    <div class="row">
+        <nav id="nav" class="mainMenu">
+            <input type="checkbox" id="check">
+            <label for="check" class="btn-menu"><img src="img/menu.png" alt=""></label>
+
+            <ul class="showOnMobile">
+                <li>
+                    <a href="index.html#">HOME</a>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <a href="index.html#portfolio">PORTFOLIO</a>
+                    <div class="line"></div>
+                </li>
+                <li>
+                    <a href="https://drive.google.com/file/d/1vysismb0nTcBCmxC3o-dUgYCPoV1QvJ2/view?usp=sharing"
+                        target="blank">RESUME</a>
+                    <div class="line"></div>
+                </li>
+                <!-- <li>
+                    <a href="contact.html">CONTACT</a>
+                    <div class="line"></div>
+                </li> -->
+            </ul>
+            <div id="marker"></div>
+
+            <!-- <div class="showOnPC">
+                <a href="index.html#">HOME<div class="line"></div></a>
+                <a href="index.html#portfolio">PORTFOLIO</a>
+                <a href="index.html#skills">SKILLS</a>
+                <a href="https://drive.google.com/file/d/1UUPV3SWxyfwGWjT5IJ0XzYC7WKZsiPI-/view?usp=drive_link"
+                    target="blank">RESUME</a>
+                <a href="index.html#portfolio">CONTACT</a>
+                <!-- <a href="contact.html">CONTACT</a> -->
+                <!-- <div id="marker"></div>
+            </div> -->
+            <div class="showOnPC">
+                <a href="#" >HOME<div class="line"></div></a>
+                <a href="#" data-target="content-1">PORTFOLIO</a>
+                <a href="#" data-target="content-2">SKILLS</a>
+                <a href="#" data-target="content-3">CONTACT</a>
+                <a href="https://drive.google.com/file/d/1vysismb0nTcBCmxC3o-dUgYCPoV1QvJ2/view?usp=sharing"
+                    target="blank">RESUME</a>
+            </div>
+            <!-- <a style="right: 50px; color: #FFF;">gonzalo.gui.71@gmail.com</a> -->
+        </nav>
+
+    </div>
+
+    <div class="container-fluid" style="margin-top: 5rem !important; margin-bottom: 5rem !important; left:0rem !important;">
+        <div class="row mainItems">
+            
+            <div class="col-md-3">
+                <img class="profile" src="img/profile.jpg">
+                <h2 id="name">ELIÁN APARICIO</h2>
+                <h5><b>SOFTWARE ENGINEER - UNITY GAME DEVELOPER</b></h5>
+                <p style="text-align: center;">I'm Elián, a developer specialized in game development with Unity for
+                    both 2D and 3D games. I also excel in developing desktop applications, mobile applications and
+                    virtual reality.
+                    <br />
+                    My attention to detail,
+                    Perseverance and commitment to continuous product updates ensure that each project exceeds
+                    expectations!
+            </div>
+            <div class="col-md-9">
+                
+                <div class="content" id="content-1">
+                    <div class="row portfolio">
+                        <div class="col-4 card" style="border: 0;">
+                        <div class="row">
+                            <div class="col-8">
+                                <h4 class="card-title" style="padding:0.5rem;">Thanos Whacker VR</h4>
+                            </div>
+                            <div class="col-4 center-container">
+                                <button class="btn" style=" background-color: #202C36;
+ color: white; font-size:14px; margin-top:5px;" onclick="toggleDescription(thanos,this)">Show
+                                    Details</button>
+                            </div>
+                        </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item frame"
+                                    style="width: 100%; height: 17em; position: relative;"
+                                    src="https://youtube.com/embed/NtRawnsILMY" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                
+                                <div id="thanos" class="description" style="display: none; margin-top: 1em;">
+                                    <h6 style="text-align: justify;">
+                                        "Thanos Whacker" is an application that consists of the Whac-a-Mole video game
+                                        brought into virtual reality, using various resources to make the game more
+                                        entertaining for the user.<br /> The complete game is set in a game room according
+                                        to the game's theme.<br />
+                                        <br />
+                                        <b>GitHub:</b><a
+                                            href="https://github.com/dev-elian/VR-Whac-a-mole">https://github.com/dev-elian/VR-Whac-a-mole</a><br />
+                                        <b>Genre: </b>Casual<br />
+                                        <b>Engine: </b>Unity 2020<br />
+                                        <b>Team Size:</b> Personal project <br />
+                                        <b>Duration: </b>2 Weeks <br />
+                                        <b>Platform: </b>Oculus Quest, Oculus Rift <br />
+                                        <b>Roles and Responsibilities: <br /></b>
+                                    </h6>
+                                    <h6 style="text-align: justify;">
+                                        <b>Game Designer:</b> I designed the game mechanics and the basic user experience in
+                                        a game room.<br />
+                                        <b>Programmer:</b> I programmed the complete functionality (game flow, scoring
+                                        system, visual effects with particle system, power-ups, overall user
+                                        experience).<br />
+                                        <b>3D Modeler:</b> I modeled and textured the game room, the game machine, and the
+                                        mallets.<br />
+                                        <b>QA Tester:</b> I conducted functionality and performance tests with Oculus Quest
+                                        II using the Oculus OVR Profiler.
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 card" style="border: 0;">
+                        <div class="row">
+                            <div class="col-8">
+                                <h4 class="card-title" style="padding:0.5rem;">Rutas Tarija</h4>
+                            </div>
+                            <div class="col-4 center-container">
+                                <button class="btn" style=" background-color: #202C36;
+ color: white; font-size:14px; margin-top:5px;" onclick="toggleDescription(rtarija, this)">Show
+                                    Details</button>
+                            </div>
+                        </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item frame"
+                                    style="width: 100%; height: 17em; position: relative;"
+                                    src="https://youtube.com/embed/Uzan6_KyTEs" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <div id="rtarija" class="description" style="display: none; margin-top: 1em;">
+                                    <h6 style="text-align: justify;">
+                                        Cross-platform application made in AvaloniaUI to display public transport routes,
+                                        calculate routes, and show transport information.<br />
+                                        <br />
+                                        The app consumes services hosted on Azure App services (Transport line service) and
+                                        Azure Container Services (Map service with Martin Tiles).<br />
+                                        <b>Roles and Responsibilities: <br /></b>
+                                        <br />
+                                    </h6>
+                                    <h6 style="text-align: justify;">
+                                        <b>UI Designer:</b> The entire interface including the icons from scratch.<br />
+                                        <b>Programmer:</b> All functionality using MVVM and connection to a WebAPI with .NET
+                                        and Azure.<br />
+                                        <b>QA Tester:</b> Quality testing.
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-4 card" style="border: 0;">
+                        <div class="row">
+                            <div class="col-8">
+                                <h4 class="card-title" style="padding:0.5rem;">Turismo VR</h4>
+                            </div>
+                            <div class="col-4 center-container">
+                                <button class="btn" style=" background-color: #202C36;
+ color: white; font-size:14px; margin-top:5px;" onclick="toggleDescription(turismo, this)">Show
+                                    Details</button>
+                            </div>
+                        </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item frame"
+                                    style="width: 100%; height: 17em; position: relative;"
+                                    src="https://youtube.com/embed/N9fjQiS4SS4" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                
+                                <div id="turismo" class="description" style="display: none; margin-top: 1em;">
+                                    <h6 style="text-align: justify;">
+                                        "Turismo VR" is an interactive app from <a href="http://www.ancestralgods.com" target="_blank">Ancestral Gods</a> that show tourist places in Bolivia with inmersive experiences
+                                        <br />
+                                        <b>Engine: </b>Unity 2020<br />
+                                        <b>Team Size:</b>This is my part from a big project<br />
+                                        <b>Duration: </b>6 months<br />
+                                        <b>Platform: </b>Oculus Quest 2<br />
+                                        <b>Roles and Responsibilities: <br /></b>
+                                    </h6>
+                                    <h6 style="text-align: justify;">
+                                        <b>Programmer:</b> I programmed 4 scenes with inmersive images, interactive objects, custom 3D models of places with relevant info.<br />
+                                        <b>3D Modeler:</b> I modeled ancient objects<br />
+                                        <b>QA Tester:</b> I conducted functionality and performance tests with Oculus Quest II using the Oculus OVR Profiler.
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row portfolio">
+                        <div class="col-4 card" style="border: 0;">
+                            
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title" style="padding:0.5rem;">Minigames</h5>
+                                </div>
+                                <div class="col-4 center-container">
+                                    <button class="btn" style=" background-color: #202C36;
+ color: white; font-size:14px; margin-top:5px;" onclick="toggleDescription(mini,this)">Show
+                                        Details</button>
+                                </div>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item frame"
+                                    style="width: 100%; height: 17em; position: relative;"
+                                    src="https://youtube.com/embed/Jhh5lF82mvE" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <div id="mini" class="description" style="display: none; margin-top: 1em;">
+                                    <h6 style="text-align: justify;">
+                                        More than 70 minigames developed.<br />
+                                        <br />
+                                        <b>Roles and Responsibilities: <br /></b>
+                                        <br />
+                                    </h6>
+                                    <h6 style="text-align: justify;">
+                                        <b>Programmer:</b> All functionality, but the assets were provided for the
+                                        clients.<br />
+                                        <b>QA Tester:</b> Functionality testing.
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 card" style="border: 0;">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title" style="padding:0.5rem;">Sales System</h5>
+                                </div>
+                                <div class="col-4 center-container">
+                                    <button class="btn" style=" background-color: #202C36;
+ color: white; font-size:14px; margin-top:5px;" onclick="toggleDescription(sales,this)">Show
+                                        Details</button>
+                                </div>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item frame"
+                                    style="width: 100%; height: 17em; position: relative;"
+                                    src="https://youtube.com/embed/4QEgs0tWt30" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <div id="sales" class="description" style="display: none; margin-top: 1em;">
+                                    <h6 style="text-align: justify;">
+                                        Transactional system created for managing sales, orders, and inventory for a
+                                        bookstore, including receipt printing and report management.<br />
+                                        <br />
+                                        <b>Roles and Responsibilities: <br /></b>
+                                    </h6>
+                                    <h6 style="text-align: justify;">
+                                        <b>UI Designer:</b> Designed the interface and printed receipts.<br />
+                                        <b>Programmer:</b> Programmed using .NET and Entity Framework with a SQL Server
+                                        database.<br />
+                                        <b>QA Tester:</b> Conducted functionality and performance testing.
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 card" style="border: 0;">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title" style="padding:0.5rem;">CurioAdolescente</h5>
+                                </div>
+                                <div class="col-4 center-container">
+                                    <button class="btn" style=" background-color: #202C36;
+ color: white; font-size:14px; margin-top:5px;" onclick="toggleDescription(curio,this)">Show
+                                        Details</button>
+                                </div>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item frame"
+                                    style="width: 100%; height: 17em; position: relative;"
+                                    src="https://youtube.com/embed/hwm-bZduCc8" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <div id="curio" class="description" style="display: none; margin-top: 1em;">
+                                    <h6 style="text-align: justify;">
+                                        "CurioAdolescente" is an educational video game developed by Ancestral Gods for Save
+                                        The Children (Bolivia) with the main goal of strengthening self-learning among
+                                        adolescents for their personal development. The game addresses topics such as sexual
+                                        rights and reproductive health, assisting in their protection and economic
+                                        empowerment through 25 mini-games.<br />
+                                        <br />
+                                        <b>Link:</b><a
+                                            href="https://play.google.com/store/apps/details?id=com.SaveTheChildren.CurioAdolescente&pcampaignid=web_share">https://play.google.com/store/apps/details?id=com.SaveTheChildren.CurioAdolescente</a><br />
+                                        <b>Genre: </b>Multiple (Casual, cooperative, strategy, puzzle, educational)<br />
+                                        <b>Engine: </b>Unity 2019<br />
+                                        <b>Team:</b> 8 People<br />
+                                        <b>Duration: </b>5 Months<br />
+                                        <b>Platform: </b>Android <br />
+                                        <b>Roles and Responsibilities: <br /></b>
+                                        <br />
+                                    </h6>
+                                    <h6 style="text-align: justify;">
+                                        <b>Game Designer:</b> I designed the mechanics of the mini-games and the
+                                        functionality of the main menu <br />
+                                        <b>Programmer:</b> I implemented the functionality of the mini-games <br />
+                                        <b>QA Tester:</b> I performed functional testing for each mini-game with the team
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-4 card" style="border: 0;">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h5 class="card-title" style="padding:0.5rem;">San Felipe De Neri</h5>
+                                </div>
+                                <div class="col-4 center-container">
+                                    <button class="btn" style=" background-color: #202C36;
+ color: white; font-size:14px; margin-top:5px;" onclick="toggleDescription(san,this)">Show
+                                        Details</button>
+                                </div>
+                            </div>
+                            <div class="embed-responsive embed-responsive-16by9">
+                                <iframe class="embed-responsive-item frame"
+                                    style="width: 100%; height: 17em; position: relative;"
+                                    src="https://youtube.com/embed/nqNsz5wysQ0" allowfullscreen></iframe>
+                            </div>
+                            <div class="card-body">
+                                <div id="san" class="description" style="display: none; margin-top: 1em;">
+                                    <h6 style="text-align: justify;">
+                                        "San Felipe De Neri" is an interactive application that showcases Bolivian artistic
+                                        works with different visual styles in the Church of San Felipe in Sucre, Bolivia,
+                                        along with tourist and educational information.<br />
+                                        <br />
+                                        <b>Genre: </b>Educational, Tourist<br />
+                                        <b>Engine: </b>Unity 2020<br />
+                                        <b>Team Size:</b> 2 People <br />
+                                        <b>Duration: </b>4 Weeks <br />
+                                        <b>Platform: </b>Android <br />
+                                        <b>Role(s) and Responsibilities: <br /></b>
+                                    </h6>
+                                    <h6 style="text-align: justify;">
+                                        <b>Game Designer:</b> I designed the user experience and mechanics <br />
+                                        <b>Programmer:</b> Full functionality (user movement, environment functionality,
+                                        multilingual support, 360-degree image viewer, etc.)<br />
+                                        <b>QA Tester:</b> Functionality and performance testing for Android
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+               
+                <div class="content" id="content-2" style="display: none;">
+                    <div class="row">
+                        
+                        <div class="col-4 card" style="border: 0;">
+                            <h2 style="padding-top: 1em;">Soft Skills</h2>
+                            <div class="row skills">
+                                <p>Problem Analysis and Resolution</p>
+                                <p>Work Ethic</p>
+                                <p>Perseverance</p>
+                                <p>Adaptability</p>
+                                <p>Continuous Learning</p>
+                                <p>Time Management</p>
+                                <p>Teamwork</p>
+                            </div>
+                        </div>
+                        <div class="col-4 card skills" style="border: 0;">
+                            <h2 style="padding-top: 1em;">Technical Skills</h2>
+                            <p>General Game Design</p>
+                            <p>2D/3D Video Game Programming</p>
+                            <p>Virtual Reality Application Development</p>
+                            <p>Native Spanish</p>
+                            <p>English B1-B2</p>
+                            <p>+7 Years with C#</p>
+                            <p>Video Editing</p>
+                            <p>3D Modeling</p>
+                            <p>Database Management</p>
+                        </div>
+                        <div class="col-4 card" style="border: 0;">
+                            <h2 style="padding-top: 1em;">Tools Used</h2>
+                            <div class="row">
+                                <div class="col-6 card skills" style="border: 0;">
+                                    <p>Unity 3D/2D</p>
+                                    <p>Blender</p>
+                                    <p>Git/GitHub</p>
+                                    <p>Discord</p>
+                                    <p>Photoshop</p>
+                                    <p>Sony Vegas</p>
+                                </div>
+                                <div class="col-6 card skills" style="border: 0;">
+                                    <p>Visual Studio</p>
+                                    <p>.NET WPF/Windows Forms</p>
+                                    <p>.NET MAUI</p>
+                                    <p>Avalonia UI</p>
+                                    <p>SQL Server</p>
+                                    <p>DaVinci Resolve</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="content" id="content-3" style="display: none;">
+                    <h3 style="padding-top: 1em;" id="portfolio">Social and Contact Networks</h3>
+                    <div class="row">
+                        <div class="col-4 youtube-link" style="background-color: #007EBB;">
+                            <img class="linkimg" src="img/in.jpg" alt="YouTube">
+                            <a href="https://www.linkedin.com/in/elian-aparicio/" target="_blank" class="text-link"
+                                style="color: white;">
+                                LinkedIn
+                            </a>
+                        </div>
+
+                        <div class="col-4 youtube-link" style="background-color: #fefefe;">
+                            <img class="linkimg" src="img/github.jpg">
+                            <a href="https://github.com/dev-elian" target="_blank" class="text-link">
+                                GitHub
+                            </a>
+                        </div>
+
+
+                        <div class="col-4 youtube-link" style="background-color: black;">
+                            <img class="linkimg" src="img/x.jpg">
+                            <a href="https://x.com/ElianAparicio_" target="_blank" class="text-link" style="color: white;">
+                                X/Twitter
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-4 youtube-link" style="background-color: red;">
+                            <img class="arrowimg" src="img/yt.jpg">
+                            <a href="https://www.youtube.com/@PragmaticGamedev" target="_blank" class="text-link"
+                                style="color: white;">
+                                /PragmaticGameDev
+                            </a>
+                            <img class="arrowimg" src="img/ch1.jpg">
+                        </div>
+
+
+                        <div class="col-4 youtube-link">
+                            <img class="linkimg" src="img/gmail.png">
+                            <a href="mailto:gonzalo.gui.71@gmail.com" target="_blank" class="text-link" style="color: black;">
+                                Contact by Gmail
+                            </a>
+                        </div>
+
+                        <div class="col-4 youtube-link" style="background-color: red;">
+                            <img class="arrowimg" src="img/yt.jpg">
+                            <a href="https://www.youtube.com/@GeekHack1" target="_blank" class="text-link" style="color: white;">
+                                /GeekHack
+                            </a>
+                            <img class="arrowimg" src="img/ch2.jpg">
+                        </div>
+
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</body>
+<footer class="page-footer">
+    <div class="container-fluid text-center text-md-center">
+
+        <div class="row" style="padding-top: 1rem;">
+
+            <!-- Grid column -->
+            <div class="col-md-12 mb-md-0 mb-12">
+
+                <!-- Links -->
+                <div class="row">
+                    <h4 class="col-md-3 text-uppercase" style="color: #FFF;">Contact</h4>
+                    <div class="col-md-2" style="text-align: center; vertical-align: middle; margin-top: 1rem">
+                        <ul class="list-unstyled links">
+                            <li>
+                                <img src="img/linkedin.png" alt="">
+                                <a href="https://www.linkedin.com/in/elian-aparicio/" target="_blank"
+                                    style="font-size: 1.5rem;">LinkedIn</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2" style="text-align: center; vertical-align: middle; margin-top: 1rem">
+                        <ul class="list-unstyled links">
+                            <li>
+                                <img src="img/ghub.png" alt="">
+                                <a href="https://github.com/dev-elian" target="_blank"
+                                    style="font-size: 1.5rem;">GitHub</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5" style="text-align: center; vertical-align: middle; margin-top: 1rem">
+                        <ul class="list-unstyled links">
+                            <li>
+                                <img src="img/gmail.png" alt="">
+                                <a href="mailto:gonzalo.gui.71@gmail.com" target="_blank"
+                                    style="font-size: 1.5rem;">gonzalo.gui.71@gmail.com</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gmail" style="background-color: #E65A4D; position: fixed; bottom: 50px; right: 20px;">
+            <img class="fixed-button-img" style="max-width: 50px; max-height: 50px;" src="img/gmail.png" alt="Send Message!">
+            <a href="mailto:gonzalo.gui.71@gmail.com" target="_blank" class="text-link"
+                style="color: white;">
+                Click To Send Mail
+            </a>
+        </div>
+    </div>
+</footer>
+<div class="text-center copyright">
+    © Copyright 2025 Elián Aparicio - All Rights Reserved
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    // Seleccionar todos los enlaces de navegación y los contenidos
+    const navLinks = document.querySelectorAll('.showOnPC a[data-target]');
+    const contents = document.querySelectorAll('.content');
+
+    // Función para ocultar todos los contenidos
+    const hideAllContents = () => {
+        contents.forEach(content => {
+            content.style.display = 'none';
+        });
+    };
+
+    // Manejar clics en los enlaces de navegación
+    navLinks.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault(); // Prevenir la acción por defecto del enlace
+
+            // Ocultar todos los contenidos
+            hideAllContents();
+
+            // Mostrar el contenido correspondiente
+            const targetId = link.getAttribute('data-target');
+            const targetContent = document.getElementById(targetId);
+            if (targetContent) {
+                targetContent.style.display = 'block';
+            }
+        });
+    });
+
+    // Inicializar: Ocultar todos menos el primer contenido
+    hideAllContents();
+    const defaultContent = document.getElementById('content-1');
+    if (defaultContent) {
+        defaultContent.style.display = 'block';
+    }
+});
+
+
+function toggleDescription(object, button) {
+    if (object.style.display === "none") {
+        object.style.display = "block";
+        button.textContent = "Hide Details";
+    } else {
+        object.style.display = "none";
+        button.textContent = "Show Details";
+    }
+}
+
+</script>
+
+</html>
